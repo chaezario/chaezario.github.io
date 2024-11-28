@@ -1,0 +1,9 @@
+# Dependency folder
+node_modules/
+
+# Editor-specific files
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db

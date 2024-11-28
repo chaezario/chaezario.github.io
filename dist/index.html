@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Portfolio - Chaezario
+  </title>
+  <!-- Tailwind CSS -->
+  <link href="output.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link href="custom.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-blue-100 text-gray-800">
+  <!-- Navigation Bar -->
+  <header class="bg-transparent text-gray-700 font-bold backdrop-blur-lg rounded-lg shadow-lg fixed top-0 left-1/2 transform -translate-x-1/2 z-50 px-8 py-4 w-max transition-all duration-300">
+   <div class="flex justify-between items-center">
+    <!-- Navbar Logo or Title (Optional) -->
+    <div class="text-2xl font-bold">
+     <!-- Bisa diganti dengan logo -->
+    </div>
+    <!-- Navbar Links for Desktop -->
+    <nav class="hidden md:flex space-x-6">
+     <a class="nav-link hover:text-indigo-300 transition duration-300" href="#Me" id="nav-home">
+      Home
+     </a>
+     <a class="nav-link hover:text-indigo-300 transition duration-300" href="#about" id="nav-about">
+      About
+     </a>
+     <a class="nav-link hover:text-indigo-300 transition duration-300" href="#projects" id="nav-projects">
+      Projects
+     </a>
+     <a class="nav-link hover:text-indigo-300 transition duration-300" href="#contact" id="nav-contact">
+      Contact
+     </a>
+    </nav>
+    <!-- Hamburger Icon for Mobile -->
+    <div class="md:hidden flex items-center ml-auto">
+     <button class="text-black focus:outline-none" id="hamburger-icon">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+       </path>
+      </svg>
+     </button>
+    </div>
+   </div>
+   <!-- Dropdown Menu for Mobile -->
+   <div class="md:hidden bg-transparent backdrop-blur-lg text-gray-600 space-y-4 py-4 hidden" id="mobile-menu">
+    <a class="block text-center hover:text-indigo-400" href="#Me" id="mobile-nav-home">
+     Home
+    </a>
+    <a class="block text-center hover:text-indigo-400" href="#about" id="mobile-nav-about">
+     About
+    </a>
+    <a class="block text-center hover:text-indigo-400" href="#projects" id="mobile-nav-projects">
+     Projects
+    </a>
+    <a class="block text-center hover:text-indigo-400" href="#contact" id="mobile-nav-contact">
+     Contact
+    </a>
+   </div>
+  </header>
+  <section class="min-h-screen flex items-center justify-center text-center bg-blue-100 py-16" id="Me">
+   <div class="max-w-6xl mx-auto text-center px-4">
+    <h2 class="text-4xl font-semibold mb-4">
+     Hi Everyone 👋, I'm
+    </h2>
+    <h3 class="text-4xl pb-2 sm:text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+     Rifky Chaezario Hidayat
+    </h3>
+    <h1 class="md:text-2xl text-md font-bold bg-gradient-to-r from-blue-800 to-green-800 bg-clip-text text-transparent my-3">
+     A Computer and Network Engineering Student
+    </h1>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="relative max-w-6xl mx-auto px-8 mt-8 font-sora max-[768px]:mt-28">
+   <div class="pb-6 flex items-center text-3xl">
+    <svg class="w-10 mr-2 icon-responsive" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+     </path>
+    </svg>
+    <h1 class="font-bold texttitle-responsive">
+     About me
+    </h1>
+   </div>
+   <div class="flex items-start max-[768px]:flex-col">
+    <div class="flex-1 pr-[70px] text-[17px] textparagraf-responsive max-[768px]:pr-0">
+     <p class="pb-[15px]">
+      Hello! My name is Rifky, and I am a Computer and Network Engineering (TKJ) student at SMK Mekanik Cibinong. With a strong passion for technology, I focus on learning about network systems, hardware, and their integration in solving real-world challenges.
+     </p>
+     <p class="pb-[15px]">
+      I am especially excited about cybersecurity and virtualization technologies like VMware and VirtualBox. I believe these fields are essential in creating secure and efficient digital environments, and I enjoy exploring how they can be applied to enhance system reliability and security.
+     </p>
+     <p class="pb-[15px]">
+      Looking forward, I aspire to become an expert in data, computers, and networking, contributing to innovative solutions in the ever-evolving world of technology. My dedication to learning and adapting ensures I am ready to tackle new challenges and make a meaningful impact in the tech industry.
+     </p>
+    </div>
+    <div class="max-[768px]:mt-6">
+     <div>
+      <h1 class="font-semibold text-2xl mb-2 texttitle-responsive">
+       Education
+      </h1>
+      <p class="text-[17px] -tracking-tighter textparagraf-responsive">
+       SMP-IT Binantara | 2019 - 2022
+      </p>
+      <p class="text-[17px] -tracking-tighter textparagraf-responsive">
+       SMK Mekanik Cibinong | 2022 - Now
+      </p>
+     </div>
+     <div>
+      <h1 class="font-semibold text-2xl mt-10 mb-2 texttitle-responsive">
+       Work experience
+      </h1>
+      <p class="text-[17px] -tracking-tighter textparagraf-responsive">
+       Not Working Yet
+      </p>
+     </div>
+    </div>
+   </div>
+   <hr class="my-10 border-[#d1d5db]"/>
+   <div class="Skill text-center">
+    <div class="Title mb-7 flex justify-center items-center text-3xl font-bold">
+     <svg class="mr-2 w-9 icon-responsive" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c-12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z">
+      </path>
+     </svg>
+     <h1 class="texttitle-responsive">
+      Skills
+     </h1>
+    </div>
+    <div class="flex justify-center flex-wrap gap-7">
+     <!-- Skill Card Template -->
+     <div class="relative text-center group w-24">
+      <div class="w-full h-full flex items-center justify-center">
+       <img alt="HTML" class="grayscale transition transform group-hover:scale-110 group-hover:grayscale-0 duration-300 w-16 h-16" src="assets/icons/html-logo.png"/>
+      </div>
+      <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-10 bg-white rounded-full px-3 text-sm font-medium text-gray-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-300">
+       HTML
+      </div>
+     </div>
+     <div class="relative text-center group w-24">
+      <div class="w-full h-full flex items-center justify-center">
+       <img alt="CSS" class="grayscale transition transform group-hover:scale-110 group-hover:grayscale-0 duration-300 w-16 h-16" src="assets/icons/css-logo.png"/>
+      </div>
+      <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-10 bg-white rounded-full px-3 py-1 text-sm font-medium text-gray-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-300">
+       CSS
+      </div>
+     </div>
+     <div class="relative text-center group w-24">
+      <div class="w-full h-full flex items-center justify-center">
+       <img alt="JavaScript" class="grayscale transition transform group-hover:scale-110 group-hover:grayscale-0 duration-300 w-16 h-16" src="assets/icons/javascript-logo.png"/>
+      </div>
+      <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-10 bg-white rounded-full px-3 py-1 text-sm font-medium text-gray-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-300">
+       JavaScript
+      </div>
+     </div>
+     <div class="relative text-center group w-24">
+      <div class="w-full h-full flex items-center justify-center">
+       <img alt="Bootstrap" class="grayscale transition transform group-hover:scale-110 group-hover:grayscale-0 duration-300 w-16 h-16" src="assets/icons/bootstrap-logo.png"/>
+      </div>
+      <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-10 bg-white rounded-full px-3 py-1 text-sm font-medium text-gray-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-300">
+       Bootstrap
+      </div>
+     </div>
+     <div class="relative text-center group w-24">
+      <div class="w-full h-full flex items-center justify-center">
+       <img alt="Tailwind" class="grayscale transition transform group-hover:scale-110 group-hover:grayscale-0 duration-300 w-16 h-16" src="assets/icons/tailwind-logo.png"/>
+      </div>
+      <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-10 bg-white rounded-full px-3 py-1 text-sm font-medium text-gray-600 opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-300">
+       Tailwind
+      </div>
+     </div>
+    </div>
+    </section>
+   </div>
+   <!-- Projects Section -->
+   <main class="relative font-sora max-w-6xl mx-auto px-8 mt-8 max-[768px]:mt-28" id="projects">
+    <div class="relative">
+     <div class="">
+      <div class="FlexProject flex items-center">
+       <svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" stroke-linecap="round" stroke-linejoin="round">
+        </path>
+       </svg>
+       <h1 class="font-bold text-[#121212] text-4xl mt-1 ml-2 max-[375px]:text-2xl max-[425px]:text-[22px] max-[600px]:text-[26px]">
+        Project
+       </h1>
+      </div>
+      <p class="mt-3 text-[17px] mb-2 text-[#525252] max-[375px]:text-[15px] max-[425px]:text-[16px] max-[600px]:text-[17px]">
+       here are some of my projects
+      </p>
+      <hr class="border-[#d1d5db]"/>
+     </div>
+     <div class="CardProject mt-9 gap-5 grid grid-cols-3 max-[992px]:grid-cols-2 max-[768px]:grid-cols-2 max-[600px]:grid-cols-1">
+      <div class="relative h-[385px] border-[1px] group border-[#e5e5e5] rounded-xl overflow-hidden cursor-pointer transition-all duration-[.5s] hover:scale-[1.03]">
+       <a aria-label="linkproject" href="https://chaezario.github.io/kalkulator-sederhana/">
+        <div class="BackgroundHoverT absolute z-[4] h-full w-full bg-black bg-opacity-[0.7] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-80">
+        </div>
+        <div class="flex flex-col items-center">
+         <div class="absolute z-0 h-full w-full">
+         </div>
+         <img alt="imgproject" class="absolute z-[1] transition-all rounded-xl group-hover:blur-[5px] duration-700 ease-in-out scale-100 blur-0 grayscale-0" loading="lazy" src="assets/projects/web-kalkulator.png"/>
+         <div class="font-poppins absolute gap-2 top-[20%] flex z-[4] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-100">
+          <h1 class="text-white">
+           View Project
+          </h1>
+          <img alt="arrow" class="w-7" src="assets/icons/arrow.svg"/>
+         </div>
+        </div>
+        <div class="font-sora bg-[#fafafa] h-full w-full absolute z-[6] mt-44 px-4 py-1">
+         <div class="flex gap-2 text-[11px] text-white pt-4">
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #website
+          </h1>
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #calculator
+          </h1>
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #simple
+          </h1>
+         </div>
+         <div class="font-sora mt-2">
+          <div class="text-[#121212] leading-10 text-lg font-medium transition-all duration-[.5s] group-hover:underline">
+           <h1>
+            Calculator Website
+           </h1>
+          </div>
+          <p class="text-sm text-[#404040] mt-1">
+            simplicity and functionality of the calculator website.
+          </p>
+          <div class="flex items-center mt-1 text-[#404040]">
+           <svg class="w-[18px] fill-[#404040]" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z">
+            </path>
+            <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z">
+            </path>
+           </svg>
+           <h1 class="text-[12px] ml-1 mt-[4px] font-medium">
+           </h1>
+          </div>
+          <div class="mt-3 w-[25px] flex gap-2">
+           <img alt="tech1" class="flex-shrink-0 w-max h-6" src="assets/icons/html-logo.png"/>
+           <img alt="tech1" class="flex-shrink-0 w-max h-6" src="assets/icons/bootstrap-logo.png"/>
+           <img alt="tech1" class="flex-shrink-0 w-max h-6" src="assets/icons/javascript-logo.png"/>
+           <img alt="tech1" class="hidden"/>
+           <img alt="nextlight" class="hidden"/>
+           <img alt="nextdark" class="hidden"/>
+           <img alt="tech4" class="hidden"/>
+          </div>
+         </div>
+        </div>
+       </a>
+      </div>
+      <div class="relative h-[385px] border-[1px] group border-[#e5e5e5] rounded-xl overflow-hidden cursor-pointer transition-all duration-[.5s] hover:scale-[1.03]">
+       <a aria-label="linkproject" href="https://youtu.be/m4VxVy_aukA?si=F60jwJvvHwcWHalc">
+        <div class="BackgroundHoverT absolute z-[4] h-full w-full bg-black bg-opacity-[0.7] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-80">
+        </div>
+        <div class="flex flex-col items-center">
+         <div class="absolute z-0 h-full w-full">
+         </div>
+         <img alt="imgproject" class="absolute z-[1] transition-all rounded-xl group-hover:blur-[5px] duration-700 ease-in-out scale-100 blur-0 grayscale-0" loading="lazy" src="assets/projects/briker-vbox.jpeg"/>
+         <div class="font-poppins absolute gap-2 top-[20%] flex z-[4] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-100">
+          <h1 class="text-white">
+           View Project
+          </h1>
+          <img alt="arrow" class="w-7" src="assets/icons/arrow.svg"/>
+         </div>
+        </div>
+        <div class="font-sora bg-[#fafafa] h-full w-full absolute z-[6] mt-44 px-4 py-1">
+         <div class="flex gap-2 text-[11px] text-white pt-4">
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #VideoCall
+          </h1>
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #linux
+          </h1>
+         </div>
+         <div class="font-sora mt-2">
+          <div class="text-[#121212] leading-10 text-lg font-medium transition-all duration-[.5s] group-hover:underline">
+           <h1>
+            Set up a VOIP server
+           </h1>
+          </div>
+          <p class="text-sm text-[#404040] mt-1">
+            Set up a VOIP server and test phone calls.
+          </p>
+          <div class="flex items-center mt-1 text-[#404040]">
+           <svg class="w-[18px] fill-[#404040]" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z">
+            </path>
+            <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z">
+            </path>
+           </svg>
+           <h1 class="text-[12px] ml-1 mt-[4px] font-medium">
+           </h1>
+          </div>
+          <div class="mt-3 w-max flex gap-2">
+           <img alt="tech1" class="flex-shrink-0 h-6" src="assets/icons/Vbox.png"/>
+           <img alt="tech1" class="hidden"/>
+           <img alt="tech1" class="hidden"/>
+           <img alt="nextlight" class="hidden"/>
+           <img alt="nextdark" class="hidden"/>
+           <img alt="tech4" class="hidden"/>
+          </div>
+         </div>
+        </div>
+       </a>
+      </div>
+      <div class="relative h-[385px] border-[1px] group border-[#e5e5e5] rounded-xl overflow-hidden cursor-pointer transition-all duration-[.5s] hover:scale-[1.03]">
+       <a aria-label="linkproject" href="https://youtu.be/gyr1hz-i_vM?si=9jxxLjKC__CAuxll">
+        <div class="BackgroundHoverT absolute z-[4] h-full w-full bg-black bg-opacity-[0.7] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-80">
+        </div>
+        <div class="flex flex-col items-center">
+         <div class="absolute z-0 h-full w-full">
+         </div>
+         <img alt="imgproject" class="absolute z-[1] transition-all rounded-xl group-hover:blur-[5px] duration-700 ease-in-out scale-100 blur-0 grayscale-0" loading="lazy" src="assets/projects/dhcp-ssh-ftp.jpeg"/>
+         <div class="font-poppins absolute gap-2 top-[20%] flex z-[4] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-100">
+          <h1 class="text-white">
+           View Project
+          </h1>
+          <img alt="arrow" class="w-7" src="assets/icons/arrow.svg"/>
+         </div>
+        </div>
+        <div class="font-sora bg-[#fafafa] h-full w-full absolute z-[6] mt-44 px-4 py-1">
+         <div class="flex gap-2 text-[11px] text-white pt-4">
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #linux
+          </h1>
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #FTP
+          </h1>
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #SSH
+          </h1>
+         </div>
+         <div class="font-sora mt-2">
+          <div class="text-[#121212] leading-10 text-lg font-medium transition-all duration-[.5s] group-hover:underline">
+           <h1>
+            DHCP,SSH,FTP
+           </h1>
+          </div>
+          <p class="text-sm text-[#404040] mt-1">
+            Configure DHCP server, SSH server and FTP Server on debian 10 operating system.
+          </p>
+          <div class="flex items-center mt-1 text-[#404040]">
+           <svg class="w-[18px] fill-[#404040]" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z">
+            </path>
+            <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z">
+            </path>
+           </svg>
+           <h1 class="text-[12px] ml-1 mt-[4px] font-medium">
+           </h1>
+          </div>
+          <div class="mt-3 w-[25px] flex gap-2">
+           <img alt="tech1" class="flex-shrink-0 w-6 h-6" src="assets/icons/debian10.svg"/>
+           <img alt="tech1" class="flex-shrink-0 w-6 h-6" src="assets/icons/terminal.png"/>
+           <img alt="nextlight" class="hidden"/>
+           <img alt="nextdark" class="hidden"/>
+           <img alt="tech4" class="hidden"/>
+          </div>
+         </div>
+        </div>
+       </a>
+      </div>
+      <div class="relative h-[385px] border-[1px] group border-[#e5e5e5] rounded-xl overflow-hidden cursor-pointer transition-all duration-[.5s] hover:scale-[1.03]">
+       <a aria-label="linkproject" href="https://youtu.be/7kP_a45Xtq4?si=354laSMjnL3lqkCy">
+        <div class="BackgroundHoverT absolute z-[4] h-full w-full bg-black bg-opacity-[0.7] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-80">
+        </div>
+        <div class="flex flex-col items-center">
+         <div class="absolute z-0 h-full w-full">
+         </div>
+         <img alt="imgproject" class="absolute z-[1] transition-all rounded-xl group-hover:blur-[5px] duration-700 ease-in-out scale-100 blur-0 grayscale-0" loading="lazy" src="assets/projects/Rakit.jpeg"/>
+         <div class="font-poppins absolute gap-2 top-[20%] flex z-[4] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-100">
+          <h1 class="text-white">
+           View Project
+          </h1>
+          <img alt="arrow" class="w-7" src="assets/icons/arrow.svg"/>
+         </div>
+        </div>
+        <div class="font-sora bg-[#fafafa] h-full w-full absolute z-[6] mt-44 px-4 py-1">
+         <div class="flex gap-2 text-[11px] text-white pt-4">
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #assembly
+          </h1>
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #component
+          </h1>
+         </div>
+         <div class="font-sora mt-2">
+          <div class="text-[#121212] leading-10 text-lg font-medium transition-all duration-[.5s] group-hover:underline">
+           <h1>
+            assemble a PC
+           </h1>
+          </div>
+          <p class="text-sm text-[#404040] mt-1">
+            assemble a PC to successfully enter the BIOS
+          </p>
+          <div class="flex items-center mt-1 text-[#404040]">
+           <svg class="w-[18px] fill-[#404040]" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z">
+            </path>
+            <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z">
+            </path>
+           </svg>
+           <h1 class="text-[12px] ml-1 mt-[4px] font-medium">
+           </h1>
+          </div>
+          <div class="mt-3 w-[25px] flex gap-2">
+           <img alt="tech1" class="flex-shrink-0 w-max h-6" src="assets/icons/pc.png"/>
+           <img alt="nextlight" class="hidden"/>
+           <img alt="nextdark" class="hidden"/>
+           <img alt="tech4" class="hidden"/>
+          </div>
+         </div>
+        </div>
+       </a>
+      </div>
+      <div class="relative h-[385px] border-[1px] group border-[#e5e5e5] rounded-xl overflow-hidden cursor-pointer transition-all duration-[.5s] hover:scale-[1.03]">
+       <a aria-label="linkproject" href="https://youtu.be/VasKHjFFej4?si=5pAHdC6b602wXjgN">
+        <div class="BackgroundHoverT absolute z-[4] h-full w-full bg-black bg-opacity-[0.7] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-80">
+        </div>
+        <div class="flex flex-col items-center">
+         <div class="absolute z-0 h-full w-full">
+         </div>
+         <img alt="imgproject" class="absolute z-[1] transition-all rounded-xl group-hover:blur-[5px] duration-700 ease-in-out scale-100 blur-0 grayscale-0" loading="lazy" src="assets/projects/crimping.jpeg"/>
+         <div class="font-poppins absolute gap-2 top-[20%] flex z-[4] opacity-0 transition-opacity duration-[.5s] group-hover:opacity-100">
+          <h1 class="text-white">
+           View Project
+          </h1>
+          <img alt="arrow" class="w-7" src="assets/icons/arrow.svg"/>
+         </div>
+        </div>
+        <div class="font-sora bg-[#fafafa] h-full w-full absolute z-[6] mt-44 px-4 py-1">
+         <div class="flex gap-2 text-[11px] text-white pt-4">
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #crimping
+          </h1>
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #RJ45
+          </h1>
+          <h1 class="flex justify-center bg-[#525252] py-[2px] px-[10px] rounded-xl">
+           #STP
+          </h1>
+         </div>
+         <div class="font-sora mt-2">
+          <div class="text-[#121212] leading-10 text-lg font-medium transition-all duration-[.5s] group-hover:underline">
+           <h1>
+            crimping Cable
+           </h1>
+          </div>
+          <p class="text-sm text-[#404040] mt-1">
+            crimping a 'Belden 50105F Industrial CAT 5E' cable.
+          </p>
+          <div class="flex items-center mt-1 text-[#404040]">
+           <svg class="w-[18px] fill-[#404040]" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z">
+            </path>
+            <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z">
+            </path>
+           </svg>
+           <h1 class="text-[12px] ml-1 mt-[4px] font-medium">
+           </h1>
+          </div>
+          <div class="mt-3 w-[25px] flex gap-2">
+           <img alt="tech1" class="flex-shrink-0 w-6 h-6" src="assets/icons/cable.png"/>
+           <img alt="tech1" class="flex-shrink-0 w-6 h-6" src="assets/icons/tang-crimp.png"/>
+           <img alt="tech1" class="hidden"/>
+           <img alt="nextlight" class="hidden"/>
+           <img alt="nextdark" class="hidden"/>
+           <img alt="tech4" class="hidden"/>
+          </div>
+         </div>
+        </div>
+       </a>
+      </div>
+     </div>
+    </div>
+   </main>
+   <!-- Contact Section -->
+   <section class="py-16 px-8" id="contact">
+    <div class="max-w-6xl mx-auto relative font-sora mt-8 rounded-lg max-[768px]:mt-28">
+     <div>
+      <div class="flex items-center text-3xl font-bold">
+       <h1>
+        Contact
+       </h1>
+       <img alt="gmail" class="w-8 ml-3" loading="lazy" src="assets/images/gmail.png"/>
+       <h1>
+        e
+       </h1>
+      </div>
+      <p class="mt-3 text-[17px] text-[#525252] mb-2 textparagraf-responsive">
+       Feel free to contact me, I will reply as soon as possible.
+      </p>
+     </div>
+     <hr class="border-[#d1d5db]"/>
+     <div class="flex justify-between max-[768px]:flex-col mt-10">
+      <div class="">
+       <h1 class="text-2xl font-medium mb-4 max-[768px]:text-xl">
+        Find me on social media
+       </h1>
+       <div class="flex flex-col mr-12 text-[#fafafa] max-[768px]:mr-0">
+        <div class="flex mr-5 mb-4 max-[768px]:mr-0">
+         <a class="border-social-media mr-5 max-[375px]:mr-2 hover:scale-105 transition duration-300 bg-[#c32aa3]" href="https://www.instagram.com/chaezario/">
+          <img alt="Instagram" class="w-6 h-6 mr-2" src="assets/icons/instagram.svg"/>
+          <h1 class="font-semibold text-sm">
+           Instagram
+          </h1>
+         </a>
+         <a class="border-social-media hover:scale-105 transition duration-300 bg-[#0a66c2]" href="https://www.linkedin.com/">
+          <img alt="Linkedin" class="w-6 h-6 mr-2" src="assets/icons/linkedin.svg"/>
+          <h1 class="font-semibold text-sm">
+           Linkedin
+          </h1>
+         </a>
+        </div>
+        <div class="flex mr-5 mb-4 max-[768px]:mr-0">
+         <a class="border-social-media mr-5 max-[375px]:mr-2 hover:scale-105 transition duration-300 bg-[#fa0000]" href="https://www.youtube.com/@rifky5575">
+          <img alt="Youtube" class="w-6 h-6 mr-2" src="assets/icons/youtube.svg"/>
+          <h1 class="font-semibold text-sm">
+           Youtube
+          </h1>
+         </a>
+         <a class="border-social-media hover:scale-105 transition duration-300 bg-[#333]" href="https://github.com/chaezario">
+          <img alt="Github" class="w-6 h-6 mr-2" src="assets/icons/github.svg"/>
+          <h1 class="font-semibold text-sm">
+           Github
+          </h1>
+         </a>
+        </div>
+        <div class="flex">
+         <a class="h-[43px] w-[380px] flex items-center justify-center rounded-lg hover:scale-105 transition duration-300 bg-[#22c55e]" href="mailto:chaezario16@gmail.com">
+          <img alt="Email" class="w-6 h-6 mr-2" src="assets/icons/email.svg"/>
+          <h1 class="font-semibold text-sm">
+           Email
+          </h1>
+         </a>
+        </div>
+       </div>
+      </div>
+      <form class="flex flex-col">
+       <hr class="hidden border-[#d1d5db] max-[768px]:mt-10 max-[768px]:block"/>
+       <h1 class="text-2xl font-medium mb-4 max-[768px]:text-xl max-[768px]:mt-10">
+        Or send
+                        me a message
+       </h1>
+       <div class="flex mb-4">
+        <input class="w-1/2 px-4 py-2 border border-[#ccc] rounded-md bg-border-mode focus:outline-none focus:ring-0 focus:border-[#ccc]" id="nama" placeholder="Name*" type="text" value=""/>
+        <input class="w-1/2 ml-4 px-4 py-2 border border-[#ccc] rounded-md bg-border-mode focus:outline-none focus:ring-0 focus:border-[#ccc]" id="email" placeholder="Email*" type="email" value=""/>
+       </div>
+       <textarea class="w-full h-32 px-4 py-2 rounded-md border border-[#ccc] bg-border-mode focus:outline-none focus:ring-0 focus:border-[#ccc]" id="pesan" placeholder="Message*"></textarea>
+       <button class="w-1/2 mt-4 px-6 py-3 bg-[#525252] text-white text-[15px] rounded-md hover:scale-[1.03] transition duration-300" id="contact-form" type="submit">
+        Send
+                        Message
+       </button>
+      </form>
+     </div>
+    </div>
+   </section>
+   <!-- Footer -->
+   <div class="max-w-6xl mx-auto px-8 mt-20">
+    <hr class="border-[#121212]"/>
+    <div class="font-poppins text-sm my-3 flex justify-center max-[375px]:text-[11px] text-[#262626]">
+     <h1>
+      ©2024 Rifky Chaezario Hidayat | Some rights reserved
+     </h1>
+    </div>
+   </div>
+   <script src="script.js"></script>
+  </div>
+ </body>
+</html>
