@@ -6,6 +6,9 @@ hamburgerIcon.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
     
+// Initialize AOS(Animate On Scroll)
+AOS.init();
+
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll('.nav-link'); // Select all nav links
     const mobileNavLinks = document.querySelectorAll('#mobile-menu a'); // Select all mobile dropdown links
