@@ -7,3 +7,22 @@ width: 180px;
 justify-content: center;
 transition-duration: .3s;
 }
+
+.media-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fafafa;
+}
+
+.media-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #121212;
+}
+
+.media-frame {
+  width: 100%;
+  border-radius: 12px;
+}
